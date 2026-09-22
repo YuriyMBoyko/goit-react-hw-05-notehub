@@ -8,7 +8,7 @@ interface ModalProps {
   children: ReactNode;
 }
 
-const modalRoot = document.getElementById('root') as HTMLElement;
+const modalRoot = document.body as HTMLElement;
 
 export default function Modal({ isOpen, onClose, children}: ModalProps) {
   useEffect(() => {
